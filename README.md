@@ -1,3 +1,3 @@
-# getting_started_php
+# getting started with php
 
 Learning to code with php
