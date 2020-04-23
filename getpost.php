@@ -12,6 +12,7 @@
   </form>
 
   <?php
+    // using post rather than get will not show data in url parameters
     echo $_POST["password"];
   ?>
 </body>
