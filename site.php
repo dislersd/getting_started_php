@@ -30,8 +30,21 @@
     echo max(20, 10), "<br>";
     // rounding
     echo ceil(3.2), "<br>";
-
-
   ?>
+
+  <!-- Input from users -->
+
+  <form action="site.php" method="get">
+    Name: <input type="text" name="name">
+    <br>
+    Age: <input type="number" name="age">
+    <br>
+    Password: <input type="password" name="password">
+    <input type="submit">
+  </form>
+  
+  <?php echo$_GET["name"] ?>
+  <?php echo$_GET["age"] ?>
+  <?php echo password_hash($_GET["password"], 1) ?>
 </body>
 </html>
