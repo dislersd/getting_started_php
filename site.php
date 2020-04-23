@@ -7,14 +7,12 @@
 </head>
 <body>
   <?php
-    $characterName = "Tom";
-    $characterAge = 35;
-    
-    echo "<h1> Dylan's Site </h1>";
-    echo "There once was a man named $characterName <br>";
-    echo "He was $characterAge years old <br>";
-    echo "He really liked the name $characterName <br>";
-    echo "He was happy to be $characterAge years old <br>";
+    $phrase = "Hello People";
+    echo strtolower($phrase), "<br>"; // hello people
+    echo strlen($phrase), "<br>"; // --> 12
+    echo $phrase[1], "<br>"; // --> e
+    echo str_replace("People", "World", $phrase), "<br>"; // --> Hello World
+    echo substr($phrase, 6), "<br>"; // --> People
   ?>
 </body>
 </html>
