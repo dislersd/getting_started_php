@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #3f434e;
+  font-size: 3rem;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(236, 236, 236)
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
