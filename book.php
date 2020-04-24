@@ -13,22 +13,20 @@
     var $author;
     var $pages;
 
-    function __construct($name){
-      echo "$name <br>";
+    function __construct($aTitle, $aAuthor, $aPages){
+      $this->title = $aTitle;
+      $this->author = $aAuthor;
+      $this->pages = $aPages;
     }
   }
 
-  $nookBook = new Book("Mike");
-  $nookBook->title = "Nooks Cranny";
-  $nookBook->author = "Nooky Nielson";
-  $nookBook->pages = 400;
   
-  $nookBook = new Book("Tom");
-  $nookBook->title = "Harry Potter";
-  $nookBook->author = "JK Rowling";
-  $nookBook->pages = 460;
 
+  $nookBook = new Book("Nooks Cranny","Nooky Nielson",400);
+  $harryPotter = new Book("Harry Potter","JK Rowling",460);
 
+  echo $nookBook->author, "<br>";
+  echo $harryPotter->pages;
   ?>
 </body>
 </html>
