@@ -26,7 +26,36 @@
   $harryPotter = new Book("Harry Potter","JK Rowling",460);
 
   echo $nookBook->author, "<br>";
-  echo $harryPotter->pages;
+  echo $harryPotter->pages, "<br>";
   ?>
+
+
+  <?php
+    class Student {
+      var $name;
+      var $study;
+      var $gpa;
+
+      function __construct($name, $study, $gpa) {
+        $this->name = $name;
+        $this->study = $study;
+        $this->gpa = $gpa;
+      }
+
+      function hasHonors(){
+        if ($this->gpa >= 3.5) {
+          return "true";
+        }
+        return "false";
+      }
+    }
+
+    $student1 = new Student("Jim", "art", 3.4);
+    $student2 = new Student("Pam", "business", 3.9);
+
+    echo $student1->hasHonors(), "<br>";
+    echo $student2->hasHonors(), "<br>";
+  ?>
+
 </body>
 </html>
